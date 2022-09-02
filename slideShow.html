@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slideShow.css">
+    <!-- script 태그의 defer 속성은 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨을 명시 -->
+    <script src="slideShow.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hidden">
+        <div class="container">
+            <!--원하는 이미지-->
+            <div class="inner">
+                <img src="../이미지/smaple_1.png">
+            </div>
+            <div class="inner">
+                <img src="../이미지/sample_6.png">
+            </div>
+            <div class="inner">
+                <img src="../이미지/sample_9.png">
+            </div>
+        </div>
+    </div>
+
+    <!--next/prev button-->
+    <div class="btn">
+        <div class="slide_button_box">
+            <button class="prev">PREV</button>
+            <ul class="numberBtn">
+                <li><button class="btn1">1</button></li>
+                <li><button class="btn2">2</button></li>
+                <li><button class="btn3">3</button></li>
+            </ul>
+            <button class="next">NEXT</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

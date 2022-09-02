@@ -1,0 +1,388 @@
+:root {
+    /* color */
+    --white-color: #fff;
+    --black-color: #140a00;
+    --primary-color: #7986cb;
+    --p-light-color: #aab6fe;
+    --p-dark-color: #49599a;
+    --secondary-color: #ffcdd2;
+    --s-dark-color: #cb9ca1;
+    --grey-dark-color: #616161;
+    --grey-light-color: #909090;
+
+    /* Size */
+    --padding-small: 5px;
+    --padding: 12px;
+    --avatar-size: 36px;
+
+    /*Font Size */
+    --font-large: 25px;
+    --font-large-2: 20px;
+    --font-medium: 16px;
+    --font-small: 12px;
+    --font-micro: 10px;
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrap {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 40px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+#logo {
+    font-family: Gugi;
+    margin: 10px;
+    padding: 3px 0 0 10px;
+}
+
+#logo a {
+    color: var(--black-color);
+}
+
+/*navbar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar_menu ul {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.navbar_menu a {
+    color: var(--grey-dark-color);
+}
+
+.navbar .navbar_menu li :hover {
+    color: var(--white-color);
+    background-color: var(--p-light-color);
+    /* border-radius: 5px; */
+}
+
+/* .link__icons {
+    list-style: none;
+    padding-bottom: 3px;
+    color: var(--grey-dark-color);
+}
+
+.link__icons li {
+    float: left;
+    padding: 7px;
+}
+
+.link__icons a {
+    color: var(--primary-color);
+} */
+
+.toggleBtn {
+    display: none;
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    color: var(--grey-light-color);
+}
+
+/*h2*/
+
+h2 {
+    width: 190px;
+    border-bottom: 1px dotted var(--primary-color);
+    text-align: center;
+    padding-top: 50px;
+    margin: 0 auto;
+
+}
+
+/* main image */
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #d1c4e9;
+}
+
+.image-box .main_img {
+    width: 80%;
+    height: auto
+        /* object-fit: cover; */
+}
+
+/* slide show test */
+
+.btns button {
+    border: 0;
+    background-color: transparent;
+}
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    max-height: 500px;
+}
+
+.slideBox {
+    width: 300vw;
+    transition: transform 0.5s;
+}
+
+.mainImg {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+}
+
+#main1 {
+    background-color: #d1c4e9;
+}
+
+#main2 {
+    background-color: #e9eaa5;
+}
+
+#main3 {
+    background-color: #ad99c1;
+}
+
+.mainImg img {
+    width: 100vw;
+
+}
+
+/* position: relative > 원래 있던 공간 사라지지 않음.
+button 높이만큼 음수 margin으로 처리 */
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    top: -240px;
+    margin-bottom: -15px;
+}
+
+.btns .prevBtn {
+    color: var(--white-color);
+}
+
+.btns .nextBtn {
+    color: var(--white-color);
+}
+
+
+/* */
+
+/* contents_about */
+
+.about {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.about__main .about__mainImg {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+#about__title {
+    text-align: center;
+    font-size: 20px;
+    padding: var(--padding);
+    margin-bottom: 15px;
+}
+
+.about__titinkiki {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__titi,
+.about__kiki {
+    padding-bottom: 20px;
+}
+
+.about__titi .about__img,
+.about__kiki .about__img {
+    text-align: center;
+    margin: 30px;
+}
+
+.about__titi img,
+.about__kiki img {
+    width: 150px;
+}
+
+.about__titinkiki p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+#titi__name,
+#kiki__name {
+    text-align: center;
+    width: 500px;
+    border-bottom: 1px solid #e6dff4;
+}
+
+/* 공통-product */
+
+/* .product {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 50px;
+} */
+
+/* contents_emoticon */
+
+.emoticon {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.emoticon .product {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.item__emoticon img {
+    width: 250px;
+    text-align: center;
+}
+
+@media screen and (max-width:700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        height: 30px;
+        text-align: center;
+    }
+
+    .navbar_menu a {
+        color: var(--grey-dark-color);
+    }
+
+    .link__icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar_menu li :hover {
+        color: var(--white-color);
+        background-color: var(--p-light-color);
+        /* border-radius: 5px; */
+    }
+
+    .navbar_menu.active {
+        display: flex;
+    }
+
+    .toggleBtn {
+        display: block;
+        padding-right: 10px;
+    }
+
+    .product {
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .item__emoticon img {
+        width: 250px;
+        text-align: center;
+    }
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 40px;
+    background-color: var(--grey-dark-color);
+    position: absolute;
+    bottom: 0;
+}
+
+.footer .footer__text {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-small);
+    color: var(--white-color);
+    padding: var(--padding);
+}
+
+.footer .footer__text p {
+    padding: 0 12px;
+    position: relative;
+    top: 2px;
+}

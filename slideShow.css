@@ -1,0 +1,41 @@
+li {
+    list-style: none;
+}
+
+
+
+.hidden {
+    overflow: hidden;
+}
+
+.container {
+    width: 300vw;
+    transition: transform 0.5s;
+}
+
+.inner {
+    width: 100vw;
+    float: left;
+}
+
+.inner img {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    margin: auto;
+}
+
+.slide_button_box {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.numberBtn {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
